@@ -1,0 +1,65 @@
+@charset "UTF-8";
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+label{
+    position: absolute;
+    width: 30px;
+    z-index: 1;
+}
+ul{
+    
+    padding-top: 30px;
+
+}
+
+input[type="checkbox"]{
+    display: none;}
+body{
+    background-color: rgb(47, 0, 255);
+    color: white;
+    
+}
+a{
+    display: block;
+    color: white;
+    text-decoration: none;
+  
+}
+a:hover{
+    color: #32863d;
+}
+nav{
+   
+    background-color: #AD1F45;
+    height: 100vh;
+    width: 290px;
+    left: -290px;
+    text-align: center;
+    position: absolute;
+    transition: all .5s; /*Fazer uma transisao animada*/
+    
+    
+    
+}
+input[type="checkbox"]:checked ~ nav{
+    transform: translateX(290px);
+    
+}
+li{
+    list-style-type: none;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    
+}
+li:hover{
+    background-color: #5FFA74;
+    color: #32863d;
+    
+}
+label>span#menu{
+    width: 200px;
+}
